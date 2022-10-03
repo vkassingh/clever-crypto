@@ -4,7 +4,7 @@
   <h1>🦊 Clever Crypto</h1>
   
   <p>
-    Clever Crypto helps you track the latest Crypto/ Bitcoin prices with the help of Chart. 
+    Clever Crypto helps you track the latest Crypto/ Bitcoin prices 💲 with the help of Chart. 
   </p>
   </div>
 
@@ -21,7 +21,6 @@
   * [Environment Variables](#key-environment-variables)
   * [Run Locally](#running-run-locally)
   
-- [Usage](#eyes-usage)
 - [Roadmap](#compass-roadmap)
 
 
@@ -52,9 +51,7 @@
 <details>
   <summary>Server</summary>
   <ul>
-    
- 
-    <li><a href=""https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
     
   </ul>
 </details>
@@ -62,7 +59,7 @@
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href=https://www.mongodb.com/">MongoDB</a></li>
+    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
     
   </ul>
 </details>
@@ -79,9 +76,8 @@
 ### :dart: Features
 
 - Fetches live Crytpo/ Bitcoin prices from WazirX API.
-- Dark mode feature
 - Visualisation of prices with the help of Charts.
-
+- Dark mode feature 
 
 
 
@@ -92,11 +88,9 @@ To run this project, you will need to add the following environment variables to
 
 `MONGO_CONNECTION_STRING`
 
-<!-- Getting Started -->
-## 	:toolbox: Getting Started
 
 <!-- Run Locally -->
-### :running: Run Locally
+## :running: Run Locally
 
 Clone the project
 
@@ -113,7 +107,7 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  nmp install
+  npm install
 ```
 
 Start the server
