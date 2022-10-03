@@ -1,7 +1,6 @@
 
 <div align="center">
 
-  <img src="" alt="logo" width="200" height="auto" />
   <h1>🦊 Clever Crypto</h1>
   
   <p>
@@ -39,7 +38,7 @@
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+  <img src="https://i.im.ge/2022/10/03/1Km2tx.photo-6181293439388332839-y.jpg" />
 </div>
 
 
@@ -49,44 +48,32 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
-  </ul>
+    <li><a href="">HTML and CSS</a></li>
+   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
+    
     <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
+    
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
+    
     <li><a href="https://www.mongodb.com/">MongoDB</a></li>
   </ul>
 </details>
 
 <details>
-<summary>DevOps</summary>
+<summary>Other Javascript Libraries</summary>
   <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
+    <li><a href="https://www.chartjs.org/">Chart.js</a></li>
+    
   </ul>
 </details>
 
@@ -97,15 +84,6 @@
 - Feature 2
 - Feature 3
 
-<!-- Color Reference -->
-### :art: Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
 
 
 <!-- Env Variables -->
@@ -113,9 +91,7 @@
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
-
-`ANOTHER_API_KEY`
+`MONGO_CONNECTION_STRING`
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
@@ -123,10 +99,10 @@ To run this project, you will need to add the following environment variables to
 <!-- Prerequisites -->
 ### :bangbang: Prerequisites
 
-This project uses Yarn as package manager
+This project uses NPM as package manager
 
 ```bash
- npm install --global yarn
+ npm install 
 ```
 
 <!-- Installation -->
@@ -203,8 +179,9 @@ function App() {
 <!-- Roadmap -->
 ## :compass: Roadmap
 
-* [x] Todo 1
-* [ ] Todo 2
+* [x] Add Visualisation with Chart.js
+* [ ] Add Sign and Login Functionality
+* [ ] Add React.js support
 
 
 
