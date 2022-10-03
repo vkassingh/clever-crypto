@@ -6,7 +6,9 @@
   <p>
     Clever Crypto helps you track the latest Crypto/ Bitcoin prices with the help of Chart. 
   </p>
-  
+  </div>
+
+<br />
 
 
 <!-- Table of Contents -->
