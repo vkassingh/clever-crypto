@@ -121,7 +121,7 @@ Start the server
 ## :compass: Roadmap
 
 * [x] Add Visualisation with Chart.js
-* [ ] Add Sign and Login Functionality
+* [x] Add Sign and Login Functionality
 * [ ] Add React.js support
 
 
