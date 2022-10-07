@@ -1,31 +1,31 @@
-const express = require('express')
-const bodyParser= require('body-parser')
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser= require('body-parser');
 const fetch= require('node-fetch');
-const mongoose= require('mongoose');
-const app = express()
+const app= express();
 
+const authRouter= require('./routes/auth')
 const Crypto = require('./models/crypto')
 
-// middleware
+//middleware
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 
+mongoose.connect('mongodb+srv://vikas:vikas123@mycluster.z2jugjl.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connection.on('error', error=>{ 
+    console.log("connection failed with db");
+});
 
-//connect with db
-let mongo_connection_string=``;
-mongoose.connect(mongo_connection_string);
-mongoose.connection.on('error', error=>{
-    console.log("db connection error ");
-} )
+mongoose.connection.on('connected', connected=>{ 
+    console.log("connected to db");
+});
 
-mongoose.connection.on('connected', connected=>{
-    console.log("connected with db")
-})
+app.use('/', authRouter)
 
 //handle gete request
-app.get('/', (req, res)=>{
+app.get('/index', (req, res)=>{
     res.render('index' , {name: null, last:null,  buy: null, sell:null, 
         volume: null, base_unit: null});
 });
@@ -39,7 +39,7 @@ app.get('/', (req, res)=>{
         .then(data => {
              
             const myarr= Object.values(data);
-            for(let i=1; i<=0; i++){
+            for(let i=1; i<=10; i++){
                 console.log(i);
                 console.log(myarr[i].name);
                 console.log(myarr[i].last);
@@ -81,8 +81,7 @@ Crypto.find({}, function(err, crypto){
     console.log(result)
 })
 
-const port= 3000;
-app.listen( port, ()=>{
-    console.log(`server running at http://127.0.0.1:`+port);
+const port= process.env.PORT || 3000;
+app.listen(port, ()=>{
+    console.log('http://127.0.0.1:'+port)
 })
-
