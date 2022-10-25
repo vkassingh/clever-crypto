@@ -78,6 +78,8 @@
 - Fetches live Crytpo/ Bitcoin prices from WazirX API.
 - Visualisation of prices with the help of Charts.
 - Dark mode feature 
+- Secure Signup and Login with hashing and Json Web Tokens.
+- Cookies for better user experience.
 
 
 
