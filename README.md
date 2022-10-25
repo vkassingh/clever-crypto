@@ -124,7 +124,8 @@ Start the server
 
 * [x] Add Visualisation with Chart.js
 * [x] Add Sign and Login Functionality
-* [ ] Add React.js support
+* [x] Add Cookies for better UX.
+* [ ] Add Session Support
 
 
 
